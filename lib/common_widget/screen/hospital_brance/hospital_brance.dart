@@ -82,6 +82,15 @@ class HospitalBrance extends StatelessWidget {
                         ],
                       ),
                     ),
+                    ElevatedButton(
+                        onPressed: () {
+                          print('pass');
+                        },
+
+                        child: Text(
+                          "mymodd",
+                          style: TextStyle(color: Colors.red),
+                        ))
                   ],
                 ),
               )
