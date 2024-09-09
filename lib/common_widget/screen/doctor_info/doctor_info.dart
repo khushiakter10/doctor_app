@@ -7,29 +7,26 @@ class DoctorInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Center(
+        child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
-                child: Image.asset("asset/image/medico.png"),
-              ),
-              SizedBox(
-                child: Column(
-                  children: [
-                    const Row(
-                      children: [
-                        Text(
-                          "Doctor Info",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                    Image.asset("asset/image/doctor _ info.png")
-                  ],
-                ),
+              Image.asset("asset/image/medico.png",),
+              Column(
+                children: [
+                  const Row(
+                    children: [
+                      Text(
+                        "Doctor Info",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                  Image.asset("asset/image/doctor _ info.png")
+                ],
               ),
               const SizedBox(
                 height: 10,
@@ -71,159 +68,147 @@ class DoctorInfo extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Column(
+              Row(
+                children: [
+                  const Text(
+                    "Specialties:",
+                    style:
+                        TextStyle(color: Colors.black, fontSize: 20),
+                  ),
+                  const Row(
+                    children: [
+                      SizedBox(
+                        width: 30,
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.lightBlue,
+                            foregroundColor: Colors.white),
+                        child: const Text(
+                          "Neurologist",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Row(
+                    children: [
+                      SizedBox(
+                        width: 30,
+                      )
+                    ],
+                  ),
+                  const Expanded(
+                    child: Row(
                       children: [
-                        Row(
-                          children: [
-                            const Text(
-                              "Specialties:",
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 20),
-                            ),
-                            const Row(
-                              children: [
-                                SizedBox(
-                                  width: 30,
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                ElevatedButton(
-                                  onPressed: () {},
-                                  style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.lightBlue,
-                                      foregroundColor: Colors.white),
-                                  child: const Text(
-                                    "Neurologist",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const Row(
-                              children: [
-                                SizedBox(
-                                  width: 30,
-                                )
-                              ],
-                            ),
-                            const Expanded(
-                              child: Row(
-                                children: [
-                                  Text(
-                                    "Experince: 17 + Years",
-                                    style: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
+                        Text(
+                          "Experince: 17 + Years",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              "Working",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 15,
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Victoria Healthcare",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              "BMDC Number: M37103",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold),
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              "Chamber @ Time:",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
-                            )
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 5,
-                        ),
-                        const TextField(
-                          decoration: InputDecoration(
-                            suffixIcon: Icon(Icons.arrow_back_ios_new),
-                              hintText: "Victoria Healthcare",
-                              hintStyle: TextStyle(
-                                  color: Colors.black87,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,)
-                          ),
-                        ),
-                        const TextField(
-                          decoration: InputDecoration(
-                            suffixIcon: Icon(Icons.arrow_back_ios_new,),
-                              hintText: "Delta Health Care,Mymensingh LTd",
-                              hintStyle: TextStyle(
-                                  color: Colors.black87,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15)),
-                        ),
-                        const TextField(
-                          decoration: InputDecoration(
-                            suffixIcon: Icon(Icons.arrow_back_ios_new),
-                              hintText: "Labaid Diagnostic Mymensingh",
-                              hintStyle: TextStyle(
-                                  color: Colors.black87,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15)),
-                        ),SizedBox(height: 7,),
-
-                        Image.asset("asset/image/searc.png")
                       ],
                     ),
-
-
-                  ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Row(
+                children: [
+                  Text(
+                    "Working",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Victoria Healthcare",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              const Row(
+                children: [
+                  Text(
+                    "BMDC Number: M37103",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              const Row(
+                children: [
+                  Text(
+                    "Chamber @ Time:",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 15),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              const TextField(
+                decoration: InputDecoration(
+                  suffixIcon: Icon(Icons.arrow_back_ios_new),
+                    hintText: "Victoria Healthcare",
+                    hintStyle: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,)
                 ),
               ),
+              const TextField(
+                decoration: InputDecoration(
+                  suffixIcon: Icon(Icons.arrow_back_ios_new,),
+                    hintText: "Delta Health Care,Mymensingh LTd",
+                    hintStyle: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15)),
+              ),
+              const TextField(
+                decoration: InputDecoration(
+                  suffixIcon: Icon(Icons.arrow_back_ios_new),
+                    hintText: "Labaid Diagnostic Mymensingh",
+                    hintStyle: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15)),
+              ),const SizedBox(height: 7,),
+
+              Image.asset("asset/image/searc.png"),
             ],
           ),
         ),

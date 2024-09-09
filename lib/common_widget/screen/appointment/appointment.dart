@@ -109,7 +109,9 @@ class Appointment extends StatelessWidget {
                     Text("An appointmen copy has also been sent to you via SMS")
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 150,),
+              Image.asset("asset/image/searc.png")
             ],
           ),
         ),

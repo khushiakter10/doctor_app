@@ -68,7 +68,11 @@ class HospitalDepertment extends StatelessWidget {
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
-                            )))
+                            )
+                        )
+                    ),
+                     const SizedBox(height: 70,),
+                     Image.asset("asset/image/searc.png")
                   ],
                 ),
               )
