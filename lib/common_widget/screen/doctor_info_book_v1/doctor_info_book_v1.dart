@@ -15,18 +15,18 @@ class DoctorInfoBookV1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset("asset/image/medico.png"),
-                  Icon(
+                  const Icon(
                     Icons.notifications,
                     size: 35,
                   )
                 ],
               )),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "Hospital Info",
@@ -40,43 +40,43 @@ class DoctorInfoBookV1 extends StatelessWidget {
                   Image.asset("asset/image/png.png")
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
                 children: [
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "Type:",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.lightBlue),
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "Specialties",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 100,
                       ),
-                      Row(
+                      const Row(
                         children: [Text("Experience: 8+ Years")],
                       ),
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "Total Branch: 4",
@@ -87,7 +87,7 @@ class DoctorInfoBookV1 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "Code Number:",
@@ -109,7 +109,7 @@ class DoctorInfoBookV1 extends StatelessWidget {
                     ],
                   ),
                   SizedBox(width: 20,),
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "About",
@@ -120,62 +120,62 @@ class DoctorInfoBookV1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("AQ good number of physicians have server with"),
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("reputation. Much emphasis has been given to quality")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("services with the help of adequate number of diploma")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("holding trained nurses. Modern medical business is ")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("very competitive.Almost every year new world class")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("machines are invented in order to compete with others")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("It has around one hundred reputed Specialist doctors")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("medical expertise, medical technology and modern")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("management. Hence, it can take challenge in any sort")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("of health care The hospital is going to create facilities")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("for resarch & development (B & D) to develop better")
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text("strateaies for the prove reatment of various")
                     ],
