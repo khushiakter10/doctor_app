@@ -11,7 +11,7 @@ class LanguageV1 extends StatelessWidget {
           margin: EdgeInsets.all(7),
           height: 300,
           width: 300,
-          decoration: BoxDecoration(color: Color(0xffF3F1F2), boxShadow: [
+          decoration: const BoxDecoration(color: Color(0xffF3F1F2), boxShadow: [
             BoxShadow(
               color: Colors.grey,
               offset: Offset(0, 2),
@@ -22,7 +22,7 @@ class LanguageV1 extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(child: Image.asset("asset/image/what.png")),
-              Row(
+              const Row(
                 children: [
                   Text(
                     "Are You sure you want to",
@@ -33,7 +33,7 @@ class LanguageV1 extends StatelessWidget {
                   )
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Text(
                     "Change this Language ?",
@@ -44,7 +44,7 @@ class LanguageV1 extends StatelessWidget {
                   )
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Text(
                     "Please do not close this page",

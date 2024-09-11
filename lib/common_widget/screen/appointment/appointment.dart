@@ -1,8 +1,9 @@
+import 'package:doctor_app/common_widget/screen/common_widget/commo_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Appointment extends StatelessWidget {
   const Appointment({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,8 +11,7 @@ class Appointment extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              SizedBox(child: Image.asset("asset/image/medico.png")),
-             SizedBox(
+              SizedBox(child: Image.asset("asset/image/medico.png")), SizedBox(
                 child: Column(
                   children: [
                     const Row(
@@ -48,7 +48,9 @@ class Appointment extends StatelessWidget {
                       height: 50,
                     ),
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Get.to(()=>const CommoWidget());
+                      },
                       child: const Card(
                         color: Colors.white38,
                         child: Column(
@@ -105,12 +107,12 @@ class Appointment extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 30,),
-                    Text("An appointmen copy has also been sent to you via SMS")
+                    const SizedBox(height: 30,),
+                    const Text("An appointmen copy has also been sent to you via SMS")
                   ],
                 ),
               ),
-              SizedBox(height: 150,),
+              const SizedBox(height: 150,),
               Image.asset("asset/image/searc.png")
             ],
           ),
