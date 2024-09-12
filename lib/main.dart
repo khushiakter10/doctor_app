@@ -4,6 +4,7 @@ import 'package:doctor_app/common_widget/screen/doctor_list/doctor_list.dart';
 import 'package:doctor_app/common_widget/screen/doctor_notification/doctor_notification.dart';
 import 'package:doctor_app/common_widget/screen/hospital_brance/hospital_brance.dart';
 import 'package:doctor_app/common_widget/screen/hospital_depertment/hospital_depertment.dart';
+import 'package:doctor_app/common_widget/screen/hospital_list/hospital_list.dart';
 import 'package:doctor_app/common_widget/screen/language/language.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DoctorList(),
+      home: HospitalList(),
     );
   }
 }
