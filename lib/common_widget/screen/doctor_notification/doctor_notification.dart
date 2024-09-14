@@ -12,9 +12,9 @@ class DoctorNotification extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(child: Image.asset("asset/image/medico.png")),
-              Column(
+              const Column(
                 children: [
-                  const Row(
+                  Row(
                     children: [
                       Text(
                         "Notification",
@@ -50,7 +50,7 @@ class DoctorNotification extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const InkWell(
+                  InkWell(
                     child: Card(
                       color: Colors.white,
                       child: Column(
@@ -150,7 +150,7 @@ class DoctorNotification extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const InkWell(
+                  InkWell(
                     child: Card(
                       color: Colors.white,
                       child: Column(
@@ -175,15 +175,9 @@ class DoctorNotification extends StatelessWidget {
                       ),
                     ),
                   ),
-                 Card(
-                   child: Column(
-                     children: [
-                       Image.asset("asset/image/searc.png")
-                     ],
-                   ),
-                 )
                 ],
               ),
+              Scaffold()
             ],
           ),
         ),
