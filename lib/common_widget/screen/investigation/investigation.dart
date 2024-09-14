@@ -7,23 +7,23 @@ class Investigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xffFFFFF),
+        backgroundColor: const Color(0x0fffffff),
         title: SizedBox(child: Image.asset("asset/image/medico.png")),
         centerTitle: true,
       ),
       body: Column(
         children: [
-          Text(
+          const Text(
             "Investigation",
             style: TextStyle(
                 color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           ListView.builder(
-            physics: PageScrollPhysics(),
+            physics: const PageScrollPhysics(),
               scrollDirection: Axis.vertical,
 
               itemBuilder: (context,index){
-              return Row(
+              return const Row(
                 children: [
                   Icon(Icons.keyboard_arrow_right_outlined),
                   Text("Complete Blood Count ")
