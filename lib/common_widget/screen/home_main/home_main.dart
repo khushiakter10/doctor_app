@@ -1,5 +1,18 @@
 import 'package:doctor_app/common_button_widget/common_button_.dart';
 import 'package:doctor_app/common_widget/screen/appointment/appointment.dart';
+import 'package:doctor_app/common_widget/screen/doctor_faq/doctor_fac.dart';
+import 'package:doctor_app/common_widget/screen/doctor_info/doctor_info.dart';
+import 'package:doctor_app/common_widget/screen/doctor_info_book/doctor_info_book.dart';
+import 'package:doctor_app/common_widget/screen/doctor_info_book_v1/doctor_info_book_v1.dart';
+import 'package:doctor_app/common_widget/screen/doctor_notification/doctor_notification.dart';
+import 'package:doctor_app/common_widget/screen/hospital_depertment/hospital_depertment.dart';
+import 'package:doctor_app/common_widget/screen/hospital_list/hospital_list.dart';
+import 'package:doctor_app/common_widget/screen/hospital_screen/hospital_screen.dart';
+import 'package:doctor_app/common_widget/screen/language/language.dart';
+import 'package:doctor_app/common_widget/screen/language_v1/language_v1.dart';
+import 'package:doctor_app/common_widget/screen/setting/setting.dart';
+import 'package:doctor_app/common_widget/screen/splas_map/splash_map.dart';
+import 'package:doctor_app/common_widget/screen/support/support.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -81,118 +94,33 @@ class HomeMain extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child:
-                                              Image.asset("asset/image/card.png"),
+                                GestureDetector(
+                              onTap: (){
+                                Get.to(()=>const HospitalList());
+                              }
+                                  ,child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child:
+                                                Image.asset("asset/image/card.png"),
+                                          ),
                                         ),
-                                      ),
-                                      Text("hospital")
-                                    ],
+                                        Text("hospital")
+                                      ],
+                                    ),
                                   ),
                                 ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card 2.png"),
-                                        ),
-                                      ),
-                                      Text("Doctor")
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card 3.png"),
-                                        ),
-                                      ),
-                                      Text("Investigation")
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card4.png"),
-                                        ),
-                                      ),
-                                      Text("Doctor Report")
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card5.png"),
-                                        ),
-                                      ),
-                                      Text("Depertment")
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card6.png"),
-                                        ),
-                                      ),
-                                      Text("Invite")
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                InkWell(
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>DoctorInfo());
+                                  },
                                   child: Container(
                                     height: 100,
                                     width: 100,
@@ -203,46 +131,176 @@ class HomeMain extends StatelessWidget {
                                           width: 80,
                                           child: Card(
                                             color: Colors.white,
-                                            child: Image.asset("asset/image/msg.png"),
+                                            child: Image.asset("asset/image/card 2.png"),
                                           ),
                                         ),
-                                        Text("FAQ")
+                                        Text("Doctor")
                                       ],
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card7.png"),
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>const DoctorNotification());
+                                  },
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card 3.png"),
+                                          ),
                                         ),
-                                      ),
-                                      Text("Support")
-                                    ],
+                                        Text("Investigation")
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>HospitalDepertment());
+                                  }
+                                 , child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card4.png"),
+                                          ),
+                                        ),
+                                        Text("Doctor Report")
+                                      ],
+                                    ),
                                   ),
                                 ),
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Card(
-                                          color: Colors.white,
-                                          child: Image.asset("asset/image/card8.png"),
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>LanguageV1());
+                                  },
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card5.png"),
+                                          ),
                                         ),
+                                        Text("Depertment")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>SplashMap());
+                                  },
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card6.png"),
+                                          ),
+                                        ),
+                                        Text("Invite")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                InkWell(
+                                  child: GestureDetector(
+                                    onTap: (){
+                                      Get.to(()=>Support());
+                                    }
+                                    ,child: Container(
+                                      height: 100,
+                                      width: 100,
+                                      child: Column(
+                                        children: [
+                                          SizedBox(
+                                            height: 80,
+                                            width: 80,
+                                            child: Card(
+                                              color: Colors.white,
+                                              child: Image.asset("asset/image/msg.png"),
+                                            ),
+                                          ),
+                                          Text("FAQ")
+                                        ],
                                       ),
-                                      Text("main")
-                                    ],
+                                    ),
+                                  ),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>DoctorFac ());
+                                  },
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card7.png"),
+                                          ),
+                                        ),
+                                        Text("support")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    Get.to(()=>DoctorInfoBookV1());
+                                  },
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    child: Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 80,
+                                          width: 80,
+                                          child: Card(
+                                            color: Colors.white,
+                                            child: Image.asset("asset/image/card8.png"),
+                                          ),
+                                        ),
+                                        Text("Main")
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],

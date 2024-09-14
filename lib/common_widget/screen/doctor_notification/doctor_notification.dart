@@ -166,18 +166,12 @@ class DoctorNotification extends StatelessWidget {
                               Text("consectetur adipiscing elit.Nunc",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),)
                             ],
                           ),
-                          Row(
-                            children: [
-                              Text("vulputate libero et velit interdum",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
-                            ],
-                          )
                         ],
                       ),
                     ),
                   ),
                 ],
               ),
-              Scaffold()
             ],
           ),
         ),
